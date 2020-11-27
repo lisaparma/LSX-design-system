@@ -5,46 +5,44 @@ import { ButtonBox } from "./style";
 /**
  * Primary UI component for user interaction
  */
-const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+const Button = ({ onClick, disabled, type, size, children,  ...props }) => {
   return (
     <ButtonBox
-      type="button"
-      style={backgroundColor && { backgroundColor }}
+      onClick={!disabled && onClick}
+      disabled={disabled}
+      type={type}
+      size={size}
       {...props}
     >
-      {label}
+      {children}
     </ButtonBox>
   );
 };
 
 Button.propTypes = {
   /**
-   * Is this the principal call to action on the page?
+   * Button status
    */
-  primary: PropTypes.bool,
+  disabled: PropTypes.bool,
   /**
-   * What background color to use
+   * Click handler
    */
-  backgroundColor: PropTypes.string,
+  onClick: PropTypes.func.isRequired,
   /**
-   * How large should the button be?
+   * Type of button
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  type: PropTypes.oneOf(["contained", "outlined", "text"]),
   /**
-   * Button contents
+   * Size button
    */
-  label: PropTypes.string.isRequired,
-  /**
-   * Optional click handler
-   */
-  onClick: PropTypes.func,
+  size: PropTypes.oneOf(["large", "medium", "small"])
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
-  primary: false,
-  size: 'medium',
+  disabled: false,
   onClick: undefined,
+  type: "contained",
+  size: "medium"
 };
 
 export default Button;

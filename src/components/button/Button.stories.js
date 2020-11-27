@@ -1,36 +1,24 @@
 import React from 'react';
-
 import Button from './Button';
 
 export default {
-  title: 'Example/Button',
+  title: 'Components/Button',
   component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => <Button {...args} >Button</Button>;
 
-export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
-  label: 'Button',
+export const Contained = Template.bind({});
+Contained.args = {
+  type: "contained"
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
+export const Outlined = Template.bind({});
+Outlined.args = {
+  type: "outlined"
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
+export const Text = Template.bind({});
+Text.args = {
+  type: "text"
 };
