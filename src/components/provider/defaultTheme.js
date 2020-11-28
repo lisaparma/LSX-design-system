@@ -9,6 +9,7 @@ export const defaultTheme = {
 		backgroundHover: "#d8edfd"
 	},
 	text: {
+		fontFamily:"'PT Sans', sans-serif",
 		large: "20px",
 		medium: "15px",
 		small: "14px"
@@ -20,5 +21,11 @@ export const defaultTheme = {
 	},
 	modal: {
 		background: "#fcfcfc"
+	},
+	input: {
+		text: "#a6a6a6",
+		border: "#cccccc",
+		hover: "#80b6e0",
+		focus: "#8fcbf9"
 	}
 };

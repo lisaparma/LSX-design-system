@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ModalContainer = styled.div`
+  font-family: ${props => props.theme.text.fontFamily};
   margin: auto;
   border-radius: 15px;
   background-color: ${props => props.theme.modal.background};

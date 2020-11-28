@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ContentModal, FooterModal, HeaderModal, ModalContainer } from "./style";
 import Portal from "../portal/Portal";
+import Text from "../text/Text";
 
 /**
  * Absolute overlay to center every component you want.
@@ -31,7 +32,6 @@ Modal.propTypes = {
   footer: PropTypes.elementType
 };
 
-Modal.defaultProps = {
-};
+Modal.defaultProps = {};
 
 export default Modal;

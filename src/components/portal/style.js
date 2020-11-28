@@ -9,4 +9,5 @@ export const Overlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: ${props => props.theme.text.fontFamily};
 `;

@@ -2,9 +2,9 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import { defaultTheme }  from "./defaultTheme";
 
-function LSXThemeProvider({ theme, children }) {
+function LSXThemeProvider({ theme = defaultTheme, children }) {
 	return (
-		<ThemeProvider theme={theme || defaultTheme}>
+		<ThemeProvider theme={theme} style={{ "font-family": defaultTheme.text.fontFamily}}>
 			{children}
 		</ThemeProvider>
 	)

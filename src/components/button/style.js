@@ -7,6 +7,7 @@ export const ButtonBox = styled.div`
 	height: fit-content;
 	border-radius: 20px;
 	cursor: ${({disabled}) => disabled ? "auto" : "pointer"};
+	font-family: ${props => props.theme.text.fontFamily};
 	font-variant-caps: all-petite-caps;
 	
 	> div, span, i {
