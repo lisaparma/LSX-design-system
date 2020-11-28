@@ -8,7 +8,7 @@ const myTheme = create({
 	brandUrl: 'https://github.com/lisaparma',
 	appBg: "#AED6F1",
 	appBorderColor: "#2E86C1",
-	appBorderRadius: "10px",
+	appBorderRadius: "20px",
 	textColor: "#154360",
 	fontBase: '"Open Sans", sans-serif',
 	fontCode: 'monospace',

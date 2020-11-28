@@ -4,6 +4,7 @@ export const ButtonBox = styled.div`
   padding: ${({theme, size}) => theme.padding[size] / 2}px ${({theme, size}) => theme.padding[size]}px;
   font-size: ${({theme, size}) => theme.text[size]};
 	width: fit-content;
+	height: fit-content;
 	border-radius: 20px;
 	cursor: ${({disabled}) => disabled ? "auto" : "pointer"};
 	font-variant-caps: all-petite-caps;

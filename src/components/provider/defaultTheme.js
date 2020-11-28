@@ -18,4 +18,7 @@ export const defaultTheme = {
 		medium: "10",
 		small: "5"
 	},
+	modal: {
+		background: "#fcfcfc"
+	}
 };

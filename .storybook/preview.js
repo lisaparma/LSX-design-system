@@ -1,4 +1,4 @@
-import LSXThemeProvider from "../src/components/Provider/LSXThemeProvider";
+import LSXThemeProvider from "../src/components/provider/LSXThemeProvider";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
