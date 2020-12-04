@@ -1,6 +1,5 @@
 # LSX-design-system
-## This is work in progress!
-
+## This is a **_work in progress_** project!
 
 - ### Run storybook in dev mode
     `npm run storybook`
